@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f89502d-5b44-4afd-a360-5dda76e1e5ff" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Program Files\Maven\apache-maven-3.8.3\maven-repo" />
+        <option name="mavenHome" value="E:/Program Files/Maven/apache-maven-3.8.3" />
+        <option name="userSettingsFile" value="E:\Program Files\Maven\apache-maven-3.8.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="29pUdoRWzdMVWk2benpOSLUtAyz" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\framework_code\SpringBoot_Study\springboot_03_web_admin\src\main\resources\mapper" />
+      <recent name="E:\framework_code\SpringBoot_Study\springboot_03_web_admin\src\main\resources\mybatis" />
+      <recent name="E:\framework_code\SpringBoot_Study\springboot_03_web_admin\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\framework_code\SpringBoot_Study\springboot_03_web_admin\src\main\resources\templates" />
+      <recent name="E:\framework_code\SpringBoot_Study\springboot_03_web_admin\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Springboot03WebAdminApplication">
+    <configuration name="Junit5AssumptionsTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_03_web_admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dl.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dl.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.dl.admin.Junit5AssumptionsTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Junit5ParameterizedTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_03_web_admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dl.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dl.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.dl.admin.Junit5ParameterizedTest" />
+      <option name="METHOD_NAME" value="test01(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Junit5ParameterizedTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_03_web_admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dl.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dl.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.dl.admin.Junit5ParameterizedTest" />
+      <option name="METHOD_NAME" value="test02(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Junit5TestAssertions.test05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_03_web_admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dl.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dl.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.dl.admin.Junit5TestAssertions" />
+      <option name="METHOD_NAME" value="test05" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Junit5TestAssertions.test06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot_03_web_admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dl.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dl.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.dl.admin.Junit5TestAssertions" />
+      <option name="METHOD_NAME" value="test06" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot03WebAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_03_web_admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dl.admin.Springboot03WebAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Junit5ParameterizedTest.test02" />
+        <item itemvalue="JUnit.Junit5ParameterizedTest.test01" />
+        <item itemvalue="JUnit.Junit5AssumptionsTest.test01" />
+        <item itemvalue="JUnit.Junit5TestAssertions.test06" />
+        <item itemvalue="JUnit.Junit5TestAssertions.test05" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f89502d-5b44-4afd-a360-5dda76e1e5ff" name="Default Changelist" comment="" />
+      <created>1653809610823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653809610823</updated>
+      <workItem from="1653809614515" duration="8442000" />
+      <workItem from="1653819247996" duration="560000" />
+      <workItem from="1653871248464" duration="21768000" />
+      <workItem from="1653924666381" duration="8569000" />
+      <workItem from="1653970348768" duration="686000" />
+      <workItem from="1653974287290" duration="248000" />
+      <workItem from="1653974675351" duration="16000" />
+      <workItem from="1654044167212" duration="96000" />
+      <workItem from="1654044282425" duration="29149000" />
+      <workItem from="1654225146137" duration="6000" />
+      <workItem from="1654226019529" duration="99000" />
+      <workItem from="1654821966368" duration="2653000" />
+      <workItem from="1654824990927" duration="5262000" />
+      <workItem from="1654835295145" duration="158000" />
+      <workItem from="1655617593572" duration="53000" />
+      <workItem from="1655627805758" duration="34000" />
+      <workItem from="1655642525548" duration="72000" />
+      <workItem from="1656748264421" duration="976000" />
+      <workItem from="1656750281172" duration="57000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>jar://E:/Program Files/Maven/apache-maven-3.8.3/maven-repo/org/springframework/boot/spring-boot-autoconfigure/2.4.1/spring-boot-autoconfigure-2.4.1-sources.jar!/org/springframework/boot/autoconfigure/AutoConfigurationPackages.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

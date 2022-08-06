@@ -1,0 +1,28 @@
+spring:
+  # 配置数据源信息：
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis_plus?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # mapper-locations: "classpath*:/mapper/**/*.xml"  这个是默认路径，我们可以不用修改
+  # 全局配置：
+  global-config:
+    db-config:
+      # 全局配置表的统一前缀：会在sql的表名前加上这个前缀
+#      table-prefix: t_
+      # 全局配制主键的生成策略：如果在添加记录时指定了主键的值，就使用你指定的
+      id-type: assign_id
+      # 逻辑未删除全局值（默认 0、表示未删除）：
+      # logic-not-delete-value: 0
+      # 逻辑删除全局值（默认 1、表示已删除）：
+      # logic-delete-value: 1
+  # 开通包的类型别名：
+  type-aliases-package: com.dl.mapper
+  # 配置扫描通用枚举:
+  type-enums-package: com.dl.enums

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+
+    <div id="app">
+        
+        <button @click="sayHello">点击就可以打招呼</button>
+        <button @keyup.enter="sayHello">回车才会打招呼，点击没用哦</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"></script>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            methods:{
+                sayHello:function () {
+                    alert("Hello ！！！")
+                }
+            }
+        });
+        
+        
+    </script>
+
+</body>
+</html>

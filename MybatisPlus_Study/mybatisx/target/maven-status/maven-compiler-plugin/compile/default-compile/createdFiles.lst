@@ -1,0 +1,5 @@
+com\dl\pojo\Product.class
+com\dl\service\impl\ProductServiceImpl.class
+com\dl\service\ProductService.class
+com\dl\MybatisxApplication.class
+com\dl\mapper\ProductMapper.class

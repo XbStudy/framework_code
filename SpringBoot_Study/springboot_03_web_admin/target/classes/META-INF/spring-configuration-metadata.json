@@ -1,0 +1,26 @@
+{
+  "groups": [
+    {
+      "name": "management.endpoint.my-end-point",
+      "type": "com.dl.admin.acutuator.endPoint.MyEndPoint",
+      "sourceType": "com.dl.admin.acutuator.endPoint.MyEndPoint"
+    }
+  ],
+  "properties": [
+    {
+      "name": "management.endpoint.my-end-point.cache.time-to-live",
+      "type": "java.time.Duration",
+      "description": "Maximum time that a response can be cached.",
+      "sourceType": "com.dl.admin.acutuator.endPoint.MyEndPoint",
+      "defaultValue": "0ms"
+    },
+    {
+      "name": "management.endpoint.my-end-point.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable the myEndPoint endpoint.",
+      "sourceType": "com.dl.admin.acutuator.endPoint.MyEndPoint",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}

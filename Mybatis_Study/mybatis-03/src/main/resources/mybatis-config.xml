@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE configuration
+                PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <!--  类型别名一： -->
+<!--    <typeAliases>-->
+<!--        <typeAlias type="com.dl.pojo.User" alias="User" />-->
+<!--    </typeAliases>-->
+    <!--  类型别名二：  name:包名  ,如果没加注解那么别名为小写的类名；加了注解就是注解定义的名字：@Alias("User") -->
+    <typeAliases>
+        <package name="com.dl.pojo"></package>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <!-- 事务管理：JDBC 和 Managed 两种-->
+            <transactionManager type="JDBC"/>
+            <!-- 数据源类型 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?serverTimezone=GMT&amp;useSSL=true&amp;useUnicode=true&amp;characterEncoding=utf-8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper class="com.dl.dao.StudentMapper"></mapper>
+        <mapper class="com.dl.dao.TeacherMapper"></mapper>
+    </mappers>
+
+</configuration>

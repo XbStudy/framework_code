@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- view层：模板-->
+    <div id="app">
+
+        {{message}} <br>
+        <span v-bind:title="message">aaa</span>
+
+        <hr/>
+
+        <!--    条件成立才会显示：    -->
+        <h1 v-if="ok">Yes</h1>
+        <h1 v-else>No</h1>
+        <h2 v-if="type=='A'">A</h2>
+        <h2 v-else-if="type=='B'">B</h2>
+        <h2 v-else="type=='C'">C</h2>
+        <h2 v-if="'C'=='C'">ccccc</h2>
+
+        <hr/>
+
+        <li v-for="fruit in fruits">
+            {{fruit}}
+        </li>
+        <li>
+            {{person.name}}
+            {{person.age}}
+            {{person.sex}}
+        </li>
+
+        <hr/>
+
+        <button v-on:click="sayHello">点我打招呼</button>
+
+        <hr/>
+
+        数据双向绑定：<input type="text" v-model="message"> {{message}}
+
+        <br>
+        <input type="radio" name="sex" v-model="person.sex" value="男">
+        <input type="radio" name="sex" v-model="person.sex" value="女">
+        单选框双向绑定：{{person.sex}}
+        <br>
+        <select v-model="type">
+            <option value="" disabled>--请选择--</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+        {{type}}
+
+        <hr>
+
+    </div>
+
+
+<!-- 导入vue.js: -->
+<script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"></script>
+<script>
+    var mv = new Vue({
+        el: "#app",
+        // model层：数据对象
+        data:{
+            message:"Hello vue!!!",
+            ok: false,
+            type: "A",
+            fruits:[
+                "苹果",
+                "香蕉",
+                "西瓜"
+            ],
+            person:{
+                name: "小白",
+                age: 3,
+                sex: "男"
+            }
+        },
+        // 方法对象：所有的方法都必须定义在methods对象中
+        methods:{
+            sayHello:function () {
+                // this指的是我们创建的vm对象：
+                alert(this.message);
+            }
+        }
+
+    })
+
+
+
+</script>
+
+</body>
+</html>

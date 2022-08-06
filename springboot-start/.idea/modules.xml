@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mystart/mystart.iml" filepath="$PROJECT_DIR$/mystart/mystart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mystart-autoconfiguration/mystart-autoconfiguration.iml" filepath="$PROJECT_DIR$/mystart-autoconfiguration/mystart-autoconfiguration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testmystart/testmystart.iml" filepath="$PROJECT_DIR$/testmystart/testmystart.iml" />
+    </modules>
+  </component>
+</project>

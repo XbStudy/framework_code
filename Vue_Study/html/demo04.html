@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+
+<!--  通过方法的形式调用：要括号  -->
+    <p>currentTime:{{currentTime()}}</p>
+<!--   通过属性的形式调用：不要括号  -->
+    <p>currentTime1:{{currentTime1}}</p>
+
+</div>
+
+<script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"></script>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        methods:{
+            currentTime:function () {
+                return Date.now();
+            }
+        },
+        // 计算属性：methods 和 computed 中的方法重名， methods的优先级高：
+        // 缓存在内存中:
+        computed:{
+            currentTime1:function () {
+                return Date.now();
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

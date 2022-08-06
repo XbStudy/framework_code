@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9ca2cc19-dfba-4f38-af65-c9e5750e6641" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Program Files\Maven\apache-maven-3.8.3\maven-repo" />
+        <option name="mavenHome" value="E:/Program Files/Maven/apache-maven-3.8.3" />
+        <option name="userSettingsFile" value="E:\Program Files\Maven\apache-maven-3.8.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="24ERmB1KuwjpftCxaHb2PFCNeWO" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.34825426" />
+    <property name="settings.editor.selected.configurable" value="spring" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dl.mapper" />
+      <recent name="com.dl.pojo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SSM_code\Spring_Study\Spring-09-transaction\src\main\resources" />
+      <recent name="E:\SSM_code\Spring_Study\Spring-09-transaction\src\main\java\com\dl\mapper" />
+      <recent name="E:\SSM_code\Spring_Study\Spring-06-proxy\src\main\java\com\dl\test04" />
+      <recent name="E:\SSM_code\Spring_Study\Spring-06-proxy\src\main\java\com\dl\test03" />
+      <recent name="E:\SSM_code\Spring_Study\Spring-01-IOC" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MyTest.queryAll (1)">
+    <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dl.test04.Client" />
+      <module name="Spring-06-proxy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dl.test04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <module name="Spring-07-aop" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.deleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring-09-transaction" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="deleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.queryAll (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring-09-transaction" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="queryAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.queryAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring-08-mybatis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="queryAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyTest.queryAll (1)" />
+        <item itemvalue="JUnit.MyTest.deleteUser" />
+        <item itemvalue="JUnit.MyTest.queryAll" />
+        <item itemvalue="Application.MyTest" />
+        <item itemvalue="Application.Client (3)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ca2cc19-dfba-4f38-af65-c9e5750e6641" name="Default Changelist" comment="" />
+      <created>1643193915915</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643193915915</updated>
+      <workItem from="1643193921088" duration="2484000" />
+      <workItem from="1643248444714" duration="5163000" />
+      <workItem from="1643253737442" duration="700000" />
+      <workItem from="1643261852972" duration="3371000" />
+      <workItem from="1643266438580" duration="22224000" />
+      <workItem from="1643418939636" duration="5383000" />
+      <workItem from="1643593775407" duration="1812000" />
+      <workItem from="1643864735634" duration="295000" />
+      <workItem from="1644045449784" duration="1268000" />
+      <workItem from="1644632826947" duration="577000" />
+      <workItem from="1644904025972" duration="61000" />
+      <workItem from="1644904239689" duration="15982000" />
+      <workItem from="1644978833218" duration="4890000" />
+      <workItem from="1645081158491" duration="2663000" />
+      <workItem from="1645533776946" duration="113000" />
+      <workItem from="1645860089074" duration="2938000" />
+      <workItem from="1645863080482" duration="1715000" />
+      <workItem from="1645880837846" duration="7836000" />
+      <workItem from="1645940161232" duration="4195000" />
+      <workItem from="1646028612212" duration="1175000" />
+      <workItem from="1646061693134" duration="16000" />
+      <workItem from="1646391079398" duration="18000" />
+      <workItem from="1646456993739" duration="95000" />
+      <workItem from="1646457187211" duration="9000" />
+      <workItem from="1647148450579" duration="97000" />
+      <workItem from="1647150030558" duration="23000" />
+      <workItem from="1647176759266" duration="445000" />
+      <workItem from="1647260387957" duration="140000" />
+      <workItem from="1647611494885" duration="29000" />
+      <workItem from="1647612022959" duration="25000" />
+      <workItem from="1649390566759" duration="10000" />
+      <workItem from="1653487023361" duration="108000" />
+      <workItem from="1653543937129" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

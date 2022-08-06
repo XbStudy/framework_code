@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 数据源：使用Spring的配置替换Mybatis的配置，c3p0,dbcp,sdruid……我们这里使用Spring提供的JDBC -->
+    <bean id="dataSources" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis?serverTimezone=GMT&amp;useSSL=true&amp;useUnicode=true&amp;characterEncoding=utf-8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </bean>
+    <!--  sqlSessionFactory  -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSources"/>
+        <!-- 绑定Mybatis配置文件  -->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <property name="mapperLocations" value="classpath:com/dl/mapper/*.xml"/>
+    </bean>
+    <!-- sqlSessionTemplate就是之前的 sqlSession  -->
+    <!--  SqlSessionTemplate 是 MyBatis-Spring 的核心。
+    作为 SqlSession 的一个实现，这意味着可以使用它无缝代替你代码中已经在使用的 SqlSession。
+     SqlSessionTemplate 是线程安全的，可以被多个 DAO 或映射器所共享使用。  -->
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <!-- SqlSessionTemplate没有set方法，所以只能通过构造器注入sqlSessionFactory  -->
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+</beans>

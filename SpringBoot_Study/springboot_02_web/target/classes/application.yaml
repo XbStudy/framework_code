@@ -1,0 +1,36 @@
+# 应用名称
+server:
+  port: 8888
+  servlet:
+    # 项目的前置路径
+    context-path: /xiaobai
+
+# 配置静态资源映射路径：
+# 静态资源路径： 类路径下的 resources，static，public目录
+# 所有请求都会先找controller，没有找到就会映射到 类路径下的 resources，static，public目录下
+# /webjars/** 都会映射到类路径下的 META-INF/webjars/
+# 默认 /** 都会映射到静态资源目录
+# 这里设置了，那么只有 /tt/** 才会映射到资源目录
+spring:
+  mvc:
+    static-path-pattern: /tt/**
+    # 开启页面表单的restful风格支持
+    hiddenmethod:
+      filter:
+        enabled: true
+  # 修改静态资源路径：
+  resources:
+    static-locations: [classpath:/haha/]
+    # 禁用所有静态资源路径
+    #add-mappings: false
+    # 静态资源的缓存时间，缓存在浏览器，单位s
+    cache:
+      period: 1000
+
+
+# 1.web静态资源访问
+# 2.
+
+
+
+

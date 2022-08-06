@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE configuration
+                PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--   -->
+    <properties resource="db.properties" />
+
+    <!-- settings  -->
+    <settings>
+        <!-- 指定 MyBatis 所用日志的具体实现,注意大小写，冒号前后不能加空格  -->
+<!--        <setting name="logImpl" value="STDOUT_LOGGING"/>-->
+
+        <!--指定 MyBatis所用日志的具体实现为 LOG4J ,注意大小写，冒号前后不能加空格  -->
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+
+    <!--  类型别名一： -->
+<!--    <typeAliases>-->
+<!--        <typeAlias type="com.dl.pojo.User" alias="User" />-->
+<!--    </typeAliases>-->
+    <!--  类型别名二：  name:包名  ,如果没加注解那么别名为小写的类名；加了注解就是注解定义的名字：@Alias("User") -->
+    <typeAliases>
+        <package name="com.dl.pojo"></package>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <!-- 事务管理：JDBC 和 Managed 两种-->
+            <transactionManager type="JDBC"/>
+            <!-- 数据源类型 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?serverTimezone=GMT&amp;useSSL=true&amp;useUnicode=true&amp;characterEncoding=utf-8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+        <!-- 可以配置多套环境 -->
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--  映射器：  -->
+    <mappers>
+        <!-- 方式一： -->
+        <!-- 使用相对于类路径的资源引用
+            <mapper resource="com/dl/dao/UserMapper.xml"/>
+        -->
+        <mapper resource="com/dl/dao/UserMapper.xml"/>
+
+        <!-- 方式二： -->
+        <!--  使用映射器接口实现类的完全限定类名
+            接口和mapper配置文件必须同名
+            接口和mapper配置文件必须在同一个包下
+            <mapper class="com.dl.dao.UserMapper"/>
+         -->
+
+        <!-- 方式三： -->
+        <!-- 将包内的映射器接口实现全部注册为映射器
+            接口和mapper配置文件必须同名
+            接口和mapper配置文件必须在同一个包下
+            <package name="com.dl.dao"/>
+        -->
+
+    </mappers>
+
+
+
+</configuration>

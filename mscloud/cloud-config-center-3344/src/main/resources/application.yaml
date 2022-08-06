@@ -1,0 +1,35 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name:  cloud-config-center #注册进Eureka服务器的微服务名
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/XbStudy/springcloud-config.git #GitHub上面的git仓库名字
+          #ignore-local-ssh-settings: true #如果为 true，则使用基于属性而不是基于文件的 SSH 配置。
+          #strict-host-key-checking: false #如果为 false，则忽略主机密钥的错误
+          # JGit需要PEM格式的RSA密钥，如果你的秘钥不对，那么请重新生成秘钥，把公钥添加到gitlab上，生成方式: ssh-keygen -m PEM -t rsa -b 4096
+          ####搜索目录
+          search-paths:
+            - springcloud-config
+          username: "XbStudy"
+          password: "20021006==D+l"
+      ####读取分支
+      label: main
+
+##rabbitmq相关配置,暴露bus刷新配置的端点
+management:
+  endpoints: #暴露bus刷新配置的端点
+    web:
+      exposure:
+        include: 'bus-refresh'
+
+#服务注册到eureka地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+

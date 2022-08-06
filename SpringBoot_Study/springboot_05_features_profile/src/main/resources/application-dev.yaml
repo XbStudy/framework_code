@@ -1,0 +1,6 @@
+server:
+  port: 8888
+
+person:
+  name: 小白dev
+  age: 3

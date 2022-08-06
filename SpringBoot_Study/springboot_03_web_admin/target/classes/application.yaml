@@ -1,0 +1,109 @@
+# 数据源
+spring:
+  datasource:
+#    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/springbootstudy?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      stat-view-servlet:
+        login-username: admin
+        login-password: admin
+        reset-enable: :false
+        enabled: true
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+      filters: stat,wall
+      filter:
+        stat:
+          slow-sql-millis: 1000
+          log-slow-sql: true
+          enabled: true
+        wall:
+          enabled: true
+          config:
+            drop-table-allow: false
+
+  jdbc:
+    template:
+      # 3秒没查询到，就超时
+      query-timeout: 3
+  mvc:
+    # 开启restFul风格:
+#    hiddenmethod:
+#      filter:
+#        enabled: false
+
+  # 配置redis
+#  redis:
+    # 指定客户端类型：
+#    client-type:
+  # 方式一配置url：
+#    url: xxx
+    # 方式二：
+
+  # 添加监控服务器的地址:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8888
+        instance:
+          # 注册的 url 应该使用 server.address 还是使用主机名构建。 默认为false:表示使用主机名  ; true:表示使用ip地址
+          prefer-ip: true
+  application:
+    name: boot_03_web_admin
+
+
+#    host: xxx
+#    port: 6379
+#    password: xxx
+
+mybatis:
+#  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com/dl/admin/pojo
+  configuration:
+    # 开启驼峰命名：
+    map-underscore-to-camel-case: true
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#支持的暴露方式
+#     HTTP：默认只暴露health和info Endpoint
+#     JMX：默认暴露所有Endpoint
+# 配置指标监控的endpoint:
+management:
+  # endpoints:配置所有端点
+  endpoints:
+    enabled-by-default: true # 默认就是true:开启所有的检控端点
+    web:
+      exposure:
+        include: '*' # 以web形式暴露所有的监控端点
+  endpoint:
+    health:
+      show-details: always
+      enabled: true
+
+    info:
+      enabled: true
+
+    beans:
+      enabled: true
+    metrics:
+      enabled: true
+
+# 自定义info信息,默认是什么都没有的:在info下自定义名字和值,也可以使用自定义类的方式:
+  #最终展示结果是配置文件和自定义类的总和
+info:
+  appName: 小白的springboot项目
+  appVersion: 1.0.0
+  # 使用@@引用pom文件的值
+  mavenProjectName: "@project.artifactId@"
+  mavenProjectVersion: '@project.version@'
+

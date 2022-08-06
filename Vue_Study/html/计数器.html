@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计数器</title>
+</head>
+<body>
+
+    <div id="app">
+        <button @click="sub">-</button>
+        <span>{{num}}</span>
+        <button @click="add">+</button>
+    </div>
+
+    <script src="../js/vue.min.js"></script>
+<!--    <script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"></script>-->
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                num:1
+            },
+            methods:{
+                add:function () {
+                    if (this.num >= 10) {
+                        alert("最大了，别点了！")
+                    }else {
+                        this.num++;
+                    }
+                },
+                sub:function () {
+                    if (this.num <= 0) {
+                        alert("最小了，别点了！")
+                    }else {
+                        this.num--;
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
